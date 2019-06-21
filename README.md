@@ -9,3 +9,8 @@
 This demo simply connects to a Firestore collections called _countCollection_ and then binds the document called _countDocument_ to the vuex store.
 
 [DEMO](https://nuxt-fire-vuexfire.firebaseapp.com/)
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/lupas/nuxt-fire-vuexfire-example/badge.svg?style=beer-square)](https://beerpay.io/lupas/nuxt-fire-vuexfire-example)  [![Beerpay](https://beerpay.io/lupas/nuxt-fire-vuexfire-example/make-wish.svg?style=flat-square)](https://beerpay.io/lupas/nuxt-fire-vuexfire-example?focus=wish)
