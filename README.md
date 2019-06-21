@@ -8,4 +8,4 @@
 
 This demo simply connects to a Firestore collections called _countCollection_ and then binds the document called _countDocument_ to the vuex store.
 
-[nuxt-fire](https://nuxt-fire-vuexfire.firebaseapp.com/)
+[DEMO](https://nuxt-fire-vuexfire.firebaseapp.com/)
