@@ -1,5 +1,5 @@
 export default {
-  mode: 'app',
+  mode: 'universal',
   /*
    ** Headers of the page
    */
