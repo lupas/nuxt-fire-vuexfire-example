@@ -2,10 +2,10 @@
   <div class="container">
     <div>
       <h1 class="title">
-        nuxt-fire-vuexfire
+        nuxt-fire-vuexfire-example
       </h1>
       <h2 class="subtitle">
-        Example Project
+        Example project showcasing the use of nuxt-fire together with vuexfire.
       </h2>
       <h3>
         Count
