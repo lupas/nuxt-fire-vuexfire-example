@@ -13,6 +13,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "core-js": "^2.6.9",
     "firebase": "^6.3.0",
     "nuxt": "^2.8.1",
     "nuxt-fire": "^1.4.1",
