@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "firebase": "^6.3.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.8.1",
     "nuxt-fire": "^1.4.1",
     "vuexfire": "^3.0.1"
   },
