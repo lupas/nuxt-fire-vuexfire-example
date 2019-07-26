@@ -14,20 +14,20 @@
   },
   "dependencies": {
     "core-js": "^2.6.9",
-    "firebase": "^6.3.0",
+    "firebase": "^6.3.1",
     "nuxt": "^2.8.1",
     "nuxt-fire": "^1.4.1",
-    "vuexfire": "^3.0.1"
+    "vuexfire": "^3.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^0.2.1",
     "babel-eslint": "^10.0.1",
-    "eslint": "^6.0.1",
+    "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-standard": "^13.0.1",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jest": "^22.7.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.13.7",
     "eslint-plugin-node": ">=8.0.1",
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.0.1",
