@@ -14,16 +14,16 @@
   },
   "dependencies": {
     "core-js": "^2.6.9",
-    "firebase": "^6.3.1",
-    "nuxt": "^2.8.1",
-    "nuxt-fire": "^1.4.1",
-    "vuexfire": "^3.1.0"
+    "firebase": "^6.4.2",
+    "nuxt": "^2.9.1",
+    "nuxt-fire": "^2.0.0",
+    "vuexfire": "^3.1.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^0.2.1",
     "babel-eslint": "^10.0.1",
-    "eslint": "^6.1.0",
+    "eslint": "^6.2.2",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-plugin-import": "^2.18.2",
