@@ -6,9 +6,9 @@
 
 ❗️ **Important:**
 
-This example works in SSR/universal mode, **BUT** binds to and loads the data from Firestore **after** rendering. It is therefore NOT rendered on the server-side and thus not a working SSR example.
+This example works in SSR/universal mode, **BUT** binds to and loads the data from Firestore **after** rendering. It is only rendered on server side due to a manual workaround (see comments in code) that kind of defeats the purpose of using Vue(x)fire in the first place.
 
-If you have a working SSR example (e.g. using the fetch hook), please create an issue and I'll add it to this example.
+If you have a working SSR example without a workaround (e.g. using the fetch hook), please create an issue and I'll add it to this example.
 
 # Demo
 
