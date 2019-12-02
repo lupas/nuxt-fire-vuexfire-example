@@ -14,27 +14,27 @@
   },
   "dependencies": {
     "core-js": "^2.6.9",
-    "firebase": "^6.4.2",
-    "nuxt": "^2.9.1",
-    "nuxt-fire": "^2.0.0",
-    "vuexfire": "^3.1.2"
+    "firebase": "^7.5.0",
+    "nuxt": "^2.10.2",
+    "nuxt-fire": "^3.0.3",
+    "vuexfire": "^3.2.0"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^1.0.1",
-    "@nuxtjs/eslint-module": "^0.2.1",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^6.2.2",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-config-standard": "^13.0.1",
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.1.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.13.7",
-    "eslint-plugin-node": ">=8.0.1",
-    "eslint-plugin-nuxt": ">=0.4.2",
-    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-jest": "^23.1.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-nuxt": "^0.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": ">=4.0.0",
-    "eslint-plugin-vue": "^5.2.3",
-    "nodemon": "^1.19.1",
-    "prettier": "^1.18.2"
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.0.1",
+    "nodemon": "^2.0.1",
+    "prettier": "^1.19.1"
   }
 }
