@@ -30,11 +30,11 @@ export default {
     const ref = this.$fireStore
       .collection('countCollection')
       .doc('countDocument')
-    this.setCountCollectionRef(ref)
+    this.bindCountDocument(ref)
   },
   methods: {
     ...mapActions({
-      setCountCollectionRef: 'setCountCollectionRef'
+      bindCountDocument: 'bindCountDocument'
     }),
     changeCount(amount) {
       const increment = this.$fireStoreObj.FieldValue.increment(amount)

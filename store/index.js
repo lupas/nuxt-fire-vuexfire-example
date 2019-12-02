@@ -8,8 +8,8 @@ export const mutations = {
   ...vuexfireMutations
 }
 export const actions = {
-  setCountCollectionRef: firestoreAction(function(context, ref) {
-    context.bindFirestoreRef('countDocument', ref)
+  bindCountDocument: firestoreAction(function({ bindFirestoreRef }, ref) {
+    bindFirestoreRef('countDocument', ref)
   })
 }
 export const getters = {
