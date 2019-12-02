@@ -5,7 +5,12 @@ export const state = () => ({
   }
 })
 export const mutations = {
-  ...vuexfireMutations
+  ...vuexfireMutations,
+  // START Workaround: Only needed in SSR Mode,not needed in SPA mode:
+  updateCount(state, count) {
+    state.countDocument.count = count
+  }
+  // END Workaround
 }
 export const actions = {
   bindCountDocument: firestoreAction(function({ bindFirestoreRef }, ref) {

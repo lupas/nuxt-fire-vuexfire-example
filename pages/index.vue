@@ -23,6 +23,26 @@
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
+  // START Workaround: Only needed in SSR Mode,not needed in SPA mode:
+  async fetch({ app, store }) {
+    let doc
+    try {
+      doc = await app.$fireStore
+        .collection('countCollection')
+        .doc('countDocument')
+        .get()
+    } catch (e) {
+      console.error('Error getting document:', e)
+      return
+    }
+    if (doc.exists) {
+      console.info('Document data:', doc.data())
+      store.commit('updateCount', doc.data().count)
+    } else {
+      console.info('No such document!')
+    }
+    // END Workaround
+  },
   computed: {
     ...mapGetters(['count'])
   },
