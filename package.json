@@ -10,7 +10,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "npm run generate && firebase deploy --only hosting --project nuxt-fire-vuexfire"
   },
   "dependencies": {
     "core-js": "^2.6.9",
