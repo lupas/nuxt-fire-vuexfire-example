@@ -4,15 +4,9 @@
 
 > Example project showcasing the use of [nuxt-fire](https://github.com/lupas/nuxt-fire) in combination with [vuexfire](https://github.com/vuejs/vuefire/tree/master/packages/vuexfire).
 
-❗️ **Important:**
-
-This example works in SSR/universal mode, **BUT** binds to and loads the data from Firestore **after** rendering. It is only rendered on server side due to a manual workaround (see comments in code) that kind of defeats the purpose of using Vue(x)fire in the first place.
-
-If you have a working SSR example without a workaround (e.g. using the fetch hook), please create an issue and I'll add it to this example.
-
 # Demo
 
-This demo simply connects to a Firestore collections called _countCollection_ and then binds the document called _countDocument_ to the vuex store.
+This demo simply connects to a Firestore collections called _countCollection_ and then binds the document called _countDocument_ to the vuex store. Works in SSR!
 
 [DEMO](https://nuxt-fire-vuexfire.firebaseapp.com/)
 

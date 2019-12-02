@@ -1,20 +1,19 @@
 import { vuexfireMutations, firestoreAction } from 'vuexfire'
+
 export const state = () => ({
   countDocument: {
-    count: 'loading'
+    count: null
   }
 })
 export const mutations = {
-  ...vuexfireMutations,
-  // START Workaround: Only needed in SSR Mode,not needed in SPA mode:
-  updateCount(state, count) {
-    state.countDocument.count = count
-  }
-  // END Workaround
+  ...vuexfireMutations
 }
 export const actions = {
-  bindCountDocument: firestoreAction(function({ bindFirestoreRef }, ref) {
-    bindFirestoreRef('countDocument', ref)
+  bindCountDocument: firestoreAction(async function({ bindFirestoreRef }) {
+    const ref = this.$fireStore
+      .collection('countCollection')
+      .doc('countDocument')
+    await bindFirestoreRef('countDocument', ref, { wait: true })
   })
 }
 export const getters = {

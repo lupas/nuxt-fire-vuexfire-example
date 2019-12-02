@@ -20,42 +20,30 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
+import { mapGetters } from 'vuex'
 
 export default {
-  // START Workaround: Only needed in SSR Mode,not needed in SPA mode:
-  async fetch({ app, store }) {
-    let doc
+  async fetch({ store }) {
     try {
-      doc = await app.$fireStore
-        .collection('countCollection')
-        .doc('countDocument')
-        .get()
+      // ONLY NEEDED IF IN SSR (UNIVERSAL) MODE, not needed in SPA MODE
+      // Binds it on server side, but will not rebind on client-side
+      await store.dispatch('bindCountDocument')
     } catch (e) {
-      console.error('Error getting document:', e)
-      return
+      console.error(e)
     }
-    if (doc.exists) {
-      console.info('Document data:', doc.data())
-      store.commit('updateCount', doc.data().count)
-    } else {
-      console.info('No such document!')
-    }
-    // END Workaround
   },
   computed: {
     ...mapGetters(['count'])
   },
-  created() {
-    const ref = this.$fireStore
-      .collection('countCollection')
-      .doc('countDocument')
-    this.bindCountDocument(ref)
+  async mounted() {
+    try {
+      // Binds it on client-side
+      await this.$store.dispatch('bindCountDocument')
+    } catch (e) {
+      console.error(e)
+    }
   },
   methods: {
-    ...mapActions({
-      bindCountDocument: 'bindCountDocument'
-    }),
     changeCount(amount) {
       const increment = this.$fireStoreObj.FieldValue.increment(amount)
       this.$fireStore
