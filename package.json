@@ -14,10 +14,10 @@
     "deploy": "npm run generate && firebase deploy --only hosting --project nuxt-fire-vuexfire"
   },
   "dependencies": {
-    "core-js": "^2.6.9",
-    "firebase": "^7.5.0",
+    "core-js": "^2.6.11",
+    "firebase": "^7.5.2",
     "nuxt": "^2.10.2",
-    "nuxt-fire": "^3.0.3",
+    "nuxt-fire": "^3.5.1",
     "vuexfire": "^3.2.0"
   },
   "devDependencies": {
@@ -27,7 +27,7 @@
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
     "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jest": "^23.1.1",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-nuxt": "^0.5.0",
