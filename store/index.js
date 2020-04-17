@@ -16,7 +16,7 @@ export const actions = {
     await bindFirestoreRef('countDocument', ref, { wait: true })
   }),
   unbindCountDocument: firestoreAction(function ({ unbindFirestoreRef }) {
-    unbindFirestoreRef('countDocument')
+    unbindFirestoreRef('countDocument', false)
   }),
 }
 export const getters = {

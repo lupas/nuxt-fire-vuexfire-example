@@ -25,10 +25,12 @@ import { mapGetters } from 'vuex'
 
 export default {
   async fetch({ store }) {
+    // ONLY NEEDED IF IN SSR (UNIVERSAL) MODE, not needed in SPA MODE
     try {
-      // ONLY NEEDED IF IN SSR (UNIVERSAL) MODE, not needed in SPA MODE
       // Binds it on server side, but will not rebind on client-side
       await store.dispatch('bindCountDocument')
+      // Unbind again to avoid memory leaks:
+      store.dispatch('unbindCountDocument')
     } catch (e) {
       console.error(e)
     }
