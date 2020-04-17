@@ -11,10 +11,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
    ** Customize the progress-bar color
@@ -34,7 +34,7 @@ export default {
   modules: [
     '@nuxtjs/eslint-module',
     [
-      'nuxt-fire',
+      '@nuxtjs/firebase',
       {
         config: {
           apiKey: 'AIzaSyDG_gasyorLNjDv6eBmeSnV321WHkCODlU',
@@ -43,12 +43,12 @@ export default {
           projectId: 'nuxt-fire-vuexfire',
           storageBucket: '',
           messagingSenderId: '1048167249658',
-          appId: '1:1048167249658:web:d45b765280a64ed4'
+          appId: '1:1048167249658:web:d45b765280a64ed4',
         },
         services: {
-          firestore: true
-        }
-      }
-    ]
-  ]
+          firestore: true,
+        },
+      },
+    ],
+  ],
 }

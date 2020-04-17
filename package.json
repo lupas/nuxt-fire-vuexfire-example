@@ -1,7 +1,7 @@
 {
   "name": "nuxt-fire-vuexfire-example",
   "version": "1.0.0",
-  "description": "Example project showcasing the use of nuxt-fire together with vuexfire.",
+  "description": "Example project showcasing the use of @nuxtjs/firebase together with vuexfire.",
   "author": "Pascal Luther",
   "private": true,
   "scripts": {
@@ -14,10 +14,10 @@
     "deploy": "npm run generate && firebase deploy --only hosting --project nuxt-fire-vuexfire"
   },
   "dependencies": {
+    "@nuxtjs/firebase": "^5.0.7",
     "core-js": "^2.6.11",
     "firebase": "^7.5.2",
     "nuxt": "^2.10.2",
-    "nuxt-fire": "^3.5.1",
     "vuexfire": "^3.2.0"
   },
   "devDependencies": {

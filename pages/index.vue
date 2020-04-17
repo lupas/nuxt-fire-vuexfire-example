@@ -5,7 +5,8 @@
         nuxt-fire-vuexfire-example
       </h1>
       <h2 class="subtitle">
-        Example project showcasing the use of nuxt-fire together with vuexfire.
+        Example project showcasing the use of @nuxtjs/firebase together with
+        vuexfire.
       </h2>
       <h3>
         Count
@@ -33,7 +34,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['count'])
+    ...mapGetters(['count']),
   },
   async mounted() {
     try {
@@ -50,7 +51,7 @@ export default {
         .collection('countCollection')
         .doc('countDocument')
         .update({ count: increment })
-    }
-  }
+    },
+  },
 }
 </script>
