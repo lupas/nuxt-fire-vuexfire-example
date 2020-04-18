@@ -88,4 +88,9 @@ html {
   font-weight: 300;
   font-size: 42px;
 }
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 </style>
