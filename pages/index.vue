@@ -24,13 +24,24 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  async fetch({ store }) {
-    // ONLY NEEDED IF IN SSR (UNIVERSAL) MODE, not needed in SPA MODE
+  async fetch({ app, store }) {
+    // ONLY NEEDED IN SSR (UNIVERSAL) MODE, not needed in SPA MODE
     try {
-      // Binds it on server side, but will not rebind on client-side
+      /**  Way 1 - Vuexfire: Bind document and unbind it again */
+      // Binds it on server side then unbind again to avoid memory leaks on the server.
+      // -> Less code, but also less performant
+      /* 
       await store.dispatch('bindCountDocument')
-      // Unbind again to avoid memory leaks:
       store.dispatch('unbindCountDocument')
+      */
+
+      /**  Way 2 - Direct store mutation */
+      // -> More performant
+      const ref = app.$fireStore
+        .collection('countCollection')
+        .doc('countDocument')
+      const countDoc = await ref.get()
+      store.commit('SET_COUNT_DOCUMENT', countDoc.data())
     } catch (e) {
       console.error(e)
     }
