@@ -13,7 +13,7 @@ export default {
   async fetch({ app, store }) {
     if (process.browser) return
     try {
-      const ref = app.$fireStore
+      const ref = app.$fire.firestore
         .collection('countCollection')
         .doc('countDocument')
       const countDoc = await ref.get()

@@ -15,7 +15,7 @@ export const mutations = {
 
 export const actions = {
   bindCountDocument: firestoreAction(async function ({ bindFirestoreRef }) {
-    const ref = this.$fireStore
+    const ref = this.$fire.firestore
       .collection('countCollection')
       .doc('countDocument')
     await bindFirestoreRef('countDocument', ref, { wait: true })

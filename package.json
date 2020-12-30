@@ -14,11 +14,11 @@
     "deploy": "npm run generate && firebase deploy --only hosting --project nuxt-fire-vuexfire"
   },
   "dependencies": {
-    "@nuxtjs/firebase": "^5.0.7",
+    "@nuxtjs/firebase": "^7.3.0",
     "core-js": "^2.6.11",
-    "firebase": "^7.5.2",
+    "firebase": "^8.2.1",
     "nuxt": "^2.12.2",
-    "vuexfire": "^3.2.0"
+    "vuexfire": "^3.2.5"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
