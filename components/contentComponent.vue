@@ -54,8 +54,8 @@ export default {
   },
   methods: {
     changeCount(amount) {
-      const increment = this.$fireStoreObj.FieldValue.increment(amount)
-      this.$fireStore
+      const increment = this.$fireModule.firestore.FieldValue.increment(amount)
+      this.$fire.firestore
         .collection('countCollection')
         .doc('countDocument')
         .update({ count: increment })
