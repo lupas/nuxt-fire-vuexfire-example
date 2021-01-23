@@ -1,4 +1,5 @@
 import { vuexfireMutations, firestoreAction } from 'vuexfire'
+import firebase from 'firebase'
 
 export const state = () => ({
   countDocument: {
@@ -15,7 +16,7 @@ export const mutations = {
 
 export const actions = {
   bindCountDocument: firestoreAction(async function ({ bindFirestoreRef }) {
-    const ref = this.$fire.firestore
+    const ref = firebase.firestore()
       .collection('countCollection')
       .doc('countDocument')
     await bindFirestoreRef('countDocument', ref, { wait: true })
